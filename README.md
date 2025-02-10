@@ -1,4 +1,4 @@
-This is a reproducer for the bug when AS with Bazel plugin can't load Bazel project that uses 'rules_android' rules.
+This is a reproducer for the bug when AS with Bazel plugin can't load Bazel project that uses 'rules_android' (Starlack version of android relared rules, https://github.com/bazelbuild/rules_android).
 
 Steps to reproduce:
 Open the project with ASWB and do non-incremental project import.
