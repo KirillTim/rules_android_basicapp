@@ -1,0 +1,46 @@
+Command: /usr/local/google/home/ktimofeev/go/bin/bazelisk build --tool_tag=ijwb:AndroidStudio --keep_going --noexperimental_run_validations --build_event_binary_file=/tmp/intellij-bep-ac1a2f71-b7bd-492b-b693-6dca902ecb51 --nobuild_event_binary_file_path_conversion --curses=no --color=yes --progress_in_terminal_title=no --aspects=@@intellij_aspect//:intellij_info_bundled.bzl%intellij_info_aspect --override_repository=intellij_aspect=/usr/local/google/home/ktimofeev/.local/share/Google/AndroidStudio2024.2/aswb/aspect --output_groups=intellij-render-resolve-android,intellij-resolve-android-direct-deps,intellij-resolve-java-direct-deps,intellij-info-android-direct-deps,intellij-info-generic,intellij-info-java-direct-deps -- //main:basic_lib //main:basic_app
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 2 targets (0 packages loaded, 0 targets configured)
+Analyzing: 2 targets (0 packages loaded, 0 targets configured)
+
+ERROR: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel: no such target '@@rules_android~~android_sdk_repository_extension~androidsdk//:platform-tools/adb': target 'platform-tools/adb' not declared in package '' defined by /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel
+ERROR: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel: no such target '@@rules_android~~android_sdk_repository_extension~androidsdk//:fail': target 'fail' not declared in package '' defined by /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel
+ERROR: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel: no such target '@@rules_android~~android_sdk_repository_extension~androidsdk//:aapt2': target 'aapt2' not declared in package '' defined by /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel
+ERROR: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel: no such target '@@rules_android~~android_sdk_repository_extension~androidsdk//:core-for-system-modules-jar': target 'core-for-system-modules-jar' not declared in package '' defined by /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel
+DEBUG: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_jvm_external~/private/extensions/maven.bzl:155:14: The maven repository 'maven' is used in two different bazel modules, originally in 'protobuf' and now in 'bazel_worker_java'
+DEBUG: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_jvm_external~/private/extensions/maven.bzl:155:14: The maven repository 'maven' is used in two different bazel modules, originally in 'protobuf' and now in 'bazel_worker_java'
+DEBUG: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_jvm_external~/private/extensions/maven.bzl:155:14: The maven repository 'maven' is used in two different bazel modules, originally in 'protobuf' and now in 'bazel_worker_java'
+DEBUG: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_jvm_external~/private/extensions/maven.bzl:155:14: The maven repository 'maven' is used in two different bazel modules, originally in 'protobuf' and now in 'bazel_worker_java'
+DEBUG: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/gazelle~/internal/bzlmod/go_deps.bzl:571:40: 
+
+Mismatch between versions requested for module github.com/bazelbuild/rules_go
+Bazel dependency version requested in MODULE.bazel: 0.51.0-rc2
+Go module version requested in go.mod: 0.50.1
+Please resolve this mismatch to prevent discrepancies between native Go and Bazel builds
+
+ERROR: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~/tools/android/BUILD:26:12: While resolving toolchains for target @@rules_android~//tools/android:android_jar (5c86453): toolchain type @@rules_android~//toolchains/android_sdk:toolchain_type resolved to target @@rules_android~~android_sdk_repository_extension~androidsdk//:sdk, but that target does not provide ToolchainInfo
+ERROR: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~/tools/android/BUILD:26:12: While resolving toolchains for target @@rules_android~//tools/android:android_jar (52684b9): toolchain type @@rules_android~//toolchains/android_sdk:toolchain_type resolved to target @@rules_android~~android_sdk_repository_extension~androidsdk//:sdk, but that target does not provide ToolchainInfo
+ERROR: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~/tools/jdk/BUILD:41:15: no such target '@@rules_android~~android_sdk_repository_extension~androidsdk//:core-for-system-modules-jar': target 'core-for-system-modules-jar' not declared in package '' defined by /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel and referenced by '@@rules_android~//tools/jdk:bootclasspath_android_only'
+ERROR: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~/toolchains/android/BUILD:22:18: every rule of type android_toolchain implicitly depends upon the target '@@rules_android~~android_sdk_repository_extension~androidsdk//:aapt2', but this target could not be found because of: no such target '@@rules_android~~android_sdk_repository_extension~androidsdk//:aapt2': target 'aapt2' not declared in package '' defined by /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel
+ERROR: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~/toolchains/android/BUILD:22:18: every rule of type android_toolchain implicitly depends upon the target '@@rules_android~~android_sdk_repository_extension~androidsdk//:platform-tools/adb', but this target could not be found because of: no such target '@@rules_android~~android_sdk_repository_extension~androidsdk//:platform-tools/adb': target 'platform-tools/adb' not declared in package '' defined by /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel
+ERROR: /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~/toolchains/android/BUILD:22:18: every rule of type android_toolchain implicitly depends upon the target '@@rules_android~~android_sdk_repository_extension~androidsdk//:fail', but this target could not be found because of: no such target '@@rules_android~~android_sdk_repository_extension~androidsdk//:fail': target 'fail' not declared in package '' defined by /usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/rules_android~~android_sdk_repository_extension~androidsdk/BUILD.bazel
+WARNING: errors encountered while analyzing target '//main:basic_lib', it will not be built.
+Analysis failed
+WARNING: errors encountered while analyzing target '//main:basic_app', it will not be built.
+Analysis failed
+WARNING: errors encountered while analyzing target '//main:basic_lib', it will not be built.
+Analysis failed
+INFO: Analyzed 2 targets (219 packages loaded, 15884 targets configured).
+WARNING: errors encountered while analyzing target '//main:basic_app', it will not be built.
+Analysis failed
+INFO: Found 0 targets...
+ERROR: command succeeded, but there were loading phase errors
+INFO: Elapsed time: 0.733s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
+FAILED: 
+INFO: Build Event Protocol files produced successfully.
+Build command finished. Retrieving BEP outputs...
+BEP outputs retrieved (44.14 kB).

@@ -1,0 +1,33 @@
+➜  /usr/local/google/home/ktimofeev/Work/rules_android_basicapp % /usr/local/google/home/ktimofeev/go/bin/bazelisk build --tool_tag=ijwb:AndroidStudio --keep_going --noexperimental_run_validations --build_event_binary_file=/tmp/intellij-bep-ac1a2f71-b7bd-492b-b693-6dca902ecb51 --nobuild_event_binary_file_path_conversion --curses=no --color=yes --progress_in_terminal_title=no --aspects=@@intellij_aspect//:intellij_info_bundled.bzl%intellij_info_aspect --override_repository=intellij_aspect=/usr/local/google/home/ktimofeev/.local/share/Google/AndroidStudio2024.2/aswb/aspect --output_groups=intellij-render-resolve-android,intellij-resolve-android-direct-deps,intellij-resolve-java-direct-deps,intellij-info-android-direct-deps,intellij-info-generic,intellij-info-java-direct-deps -- //main:basic_lib //main:basic_app       
+
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 2 targets (1 packages loaded, 0 targets configured)
+Analyzing: 2 targets (1 packages loaded, 0 targets configured)
+
+ERROR: /usr/local/google/home/ktimofeev/Work/rules_android_basicapp/main/BUILD:9:16: in @@intellij_aspect//:intellij_info_bundled.bzl%intellij_info_aspect aspect on android_library rule //main:basic_lib: 
+Traceback (most recent call last):
+        File "/usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/intellij_aspect/intellij_info_bundled.bzl", line 67, column 37, in _aspect_impl
+                return intellij_info_aspect_impl(target, ctx, semantics)
+        File "/usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/intellij_aspect/intellij_info_impl_bundled.bzl", line 1161, column 35, in intellij_info_aspect_impl
+                handled = collect_android_info(target, ctx, semantics, ide_info, ide_info_file, output_groups) or handled
+        File "/usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/intellij_aspect/intellij_info_impl_bundled.bzl", line 791, column 40, in collect_android_info
+                handled = _collect_android_ide_info(target, ctx, semantics, ide_info, ide_info_file, output_groups) or handled
+        File "/usr/local/google/home/ktimofeev/.cache/bazel/_bazel_ktimofeev/d2668ece4a91d3a1e8de052a3579464e/external/intellij_aspect/intellij_info_impl_bundled.bzl", line 817, column 25, in _collect_android_ide_info
+                android = target[android_common.AndroidIdeInfo]
+Error: <target //main:basic_lib> (rule 'android_library') doesn't contain declared provider 'AndroidIdeInfo'
+Analyzing: 2 targets (45 packages loaded, 4161 targets configured)
+[1 / 1] no actions running
+WARNING: errors encountered while analyzing target '//main:basic_app', it will not be built.
+Analysis of target '//main:basic_lib' failed
+INFO: Analyzed 2 targets (45 packages loaded, 4161 targets configured).
+WARNING: errors encountered while analyzing target '//main:basic_lib', it will not be built.
+Analysis of target '//main:basic_lib' failed
+INFO: Found 2 targets...
+ERROR: command succeeded, but not all targets were analyzed
+INFO: Elapsed time: 1.314s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
+FAILED: 
+INFO: Build Event Protocol files produced successfully.
