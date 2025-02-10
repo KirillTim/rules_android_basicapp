@@ -30,8 +30,9 @@ Error: <target //main:basic_lib> (rule 'android_library') doesn't contain declar
 
 The problem seems to be that the aspect file that AS uses during the import is outdated and references `AndroidIdeInfo` that is not declared by the `rules_android.`
 
+```
+Bazel version 7.5.0
 
-Bazel version 7.5.0, 
 Android Studio Ladybug Feature Drop | 2024.2.2
 Build #AI-242.23726.103.2422.12816248, built on December 18, 2024
 Runtime version: 21.0.4+-12422083-b607.1 amd64
@@ -43,6 +44,7 @@ Memory: 16000M
 Cores: 96
 Registry:
   ide.experimental.ui=true
+```
   i18n.locale=
 Non-Bundled Plugins:
   com.google.idea.bazel.aswb (12816248-api-version-242)
